@@ -1,0 +1,72 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+
+  .logo {
+    width: 10em;
+  }
+
+  .menu {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 14px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 10px;
+      }
+
+      /* Additional search box styles */
+    }
+  }
+
+  .mobile-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      position: absolute;
+      top: 8%;
+      left: 0;
+      width: 100%;
+      display: none;
+      background: white;
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          padding: 10px;
+        }
+      }
+    }
+
+    .mobile-open {
+      display: block;
+      z-index: 50 !important;
+    }
+
+    .mobile-toggle {
+      display: block;
+    }
+  }
+}

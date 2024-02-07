@@ -1,0 +1,111 @@
+.footer {
+  background-image: url(../../assets/footer.JPG);
+  width: 100%;
+  // height: 60vh;
+  background-size: cover;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  padding: 4% 10%;
+
+  display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  //   top: 100%;
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.line3 {
+  border-left: 5px solid white;
+  height: 20%;
+  position: absolute;
+  left: 10%;
+  margin-left: 3px;
+}
+.heading2 {
+  margin-left: 12px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-top: 25px;
+}
+.two {
+  margin-left: 50%;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 50%;
+  padding: 18px 18px;
+
+  input {
+    font-size: 1em;
+    padding: 1em;
+    margin: 0.1em 0.2em;
+    height: 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  button {
+    // height: auto;
+    font-size: 0.7em;
+    padding: 0.7em;
+    margin: 1em;
+    border-radius: 5px;
+  }
+
+  .sign {
+    font-size: 0.8em;
+    margin: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100vw;
+    flex-direction: column;
+
+    .col {
+      z-index: 80;
+    }
+
+    .line3 {
+      display: none;
+    }
+
+    .heading2 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      backdrop-filter: blur(2px);
+
+      input {
+        width: 100%;
+        margin: 0.5em;
+      }
+      button {
+        display: block;
+      }
+    }
+  }
+}

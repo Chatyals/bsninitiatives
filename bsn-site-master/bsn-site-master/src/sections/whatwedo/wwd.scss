@@ -1,0 +1,138 @@
+.whatwd {
+  background-image: url(../../assets/background.jpg);
+  background-size: cover;
+  // background-repeat: repeat;
+  width: 100%;
+  height: 60vh;
+  // position: relative;
+  // overflow: hidden;
+}
+
+.page2 {
+  top: 22rem;
+  position: absolute;
+  left: 20rem;
+  // opacity: 0;
+  padding: 18px 18px;
+  background: rgba(128, 128, 128, 0.8);
+  animation: slide-up 1s ease 0.5s;
+  animation-fill-mode: forwards;
+
+  h3 {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.icons2 {
+  top: 15rem;
+  position: fixed;
+  padding: 18px 18px;
+  color: tomato;
+  font-size: 40px;
+
+  .one {
+    margin-bottom: 10px;
+  }
+
+  .two {
+    right: 10px;
+  }
+
+  .three {
+    margin-top: 10px;
+  }
+}
+
+.expertise{
+  display: grid;
+  width: 90%;
+  margin-top: 5%;
+
+  .line6{
+    border-left: 5px solid tomato;
+    height: 100vh;
+    position: absolute;
+    left: 10%;
+    margin-left: 3px;
+  }
+
+  .heading4{
+    margin-left: 26%;
+    font-size: 30px;
+  }
+  .heading5{
+    margin-left: 12%;
+    font-size: 30px;
+  }
+  .heading12{
+    color: tomato;
+    font-size: 20px;
+  }
+  .heading11{
+    color: tomato;
+    font-weight: 600;
+    margin-left: 40%;
+    margin-top: 3rem;
+    font-size: 25px;
+  }
+  img{
+    background-color: tomato;
+  }
+  h4{
+    font-weight: 600;
+    color: black;
+  }
+  p{
+    font-weight: 400;
+    color: black;
+  }
+}
+
+.accordion-button{
+  right: 12%;
+  font-weight: 600;
+  font-size: 15px;
+  
+}
+.accordion {
+  margin-bottom: 5%;
+}
+.note{
+  margin-left: 20%;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width:480px) {
+  .whatwd{
+    background-image: url(../../assets/background.jpg);
+    background-size: cover;
+ 
+    width: 100%;
+    height: 30vh;
+    background-repeat: repeat;
+
+    .page2{
+      top: 12rem;
+      position: absolute;
+      left: 5rem;
+      // opacity: 0;
+      padding: 7px 7px;
+      background: rgba(128, 128, 128, 0.8);
+      animation: slide-up 1s ease 0.5s;
+      animation-fill-mode: forwards;
+      h3 {
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  
+  }
+}
+
+
+
